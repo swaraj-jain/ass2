@@ -11,10 +11,8 @@ var express      =require("express"),
     User         = require("./models/user");
 
 
-//var url=process.env.DATABASEURL||"mongodb://localhost/ass2_1";
-//mongoose.connect("mongodb://localhost/myself_v6");
-// mongodb+srv://ass2:12345@cluster0-6amdl.mongodb.net/<dbname>?retryWrites=true&w=majority
-mongoose.connect("mongodb://localhost/ass2_1");
+var url=process.env.DATABASEURL||"mongodb://localhost/ass2_1";
+mongoose.connect(url);
 
 
 app.use(bodyparser.urlencoded({extended: true}));

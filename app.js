@@ -12,7 +12,7 @@ var express      =require("express"),
 
 
 var url=process.env.DATABASEURL||"mongodb://localhost/ass2_1";
-mongoose.connect(url);
+mongoose.connect("mongodb+srv://ass2new:12345@cluster0-hrpzu.mongodb.net/<dbname>?retryWrites=true&w=majority");
 
 
 app.use(bodyparser.urlencoded({extended: true}));

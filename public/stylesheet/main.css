@@ -255,7 +255,7 @@ li{
 }
 #main{
     position: absolute;
-    font-size: 4.3rem;
+    font-size: 4rem;
     left: 40%;
     top: 40%;
     transform: translate(-50%,-50%);
@@ -268,7 +268,7 @@ li{
 #main:before{
     content: attr(data-text);
     position: absolute;
-    font-size: 4.3rem;
+    font-size: 4rem;
     top: 0;
     left: 0;
     width: 100%;

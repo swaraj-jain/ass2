@@ -275,7 +275,6 @@ li{
     height: 100%;
     color: white;
     overflow: hidden;
-    border-right:1px solid white;
     animation: ani 13s steps(38) infinite;
     white-space: nowrap;
 

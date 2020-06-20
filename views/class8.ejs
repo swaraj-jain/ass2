@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>My Bazar</title>
+    <link rel="stylesheet" href="/stylesheet/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&family=Nunito:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheet/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Gloria+Hallelujah&family=IBM+Plex+Serif&family=Indie+Flower&family=Lexend+Tera&family=Noto+Serif+JP:wght@700&family=Roboto+Slab:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Lexend+Tera&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@800&family=Patrick+Hand&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4e16efa13b.js" crossorigin="anonymous"></script>
+</head>
+<body >
+
+    <nav class="navbar navbar-inverse navbar-fixed-top   carousel-inner" style="background: #1e3d59; color: white; border: 0px; padding-top: 0px;" >
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/" style="font-size: x-large; color: white;">Education Hub
+                <!--<img alt="Brand" src="...">-->
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+            <!--left side of nav bar except heading-->
+            <ul class="nav navbar-nav">
+                <li><a href="#8" id=landingnav>Class 8</a></li>
+                <li><a href="#9" id=landingnav>Class 9</a></li>
+                <li><a href="#10" id=landingnav>Class 10</a></li>
+                <li><a href="/discussions" id=landingnav>Discussion</a></li>
+            </ul>
+            <!--right side of navbar-->
+            <ul class="nav navbar-nav navbar-right">
+                <% if(!currentUser){ %>
+                    <li><a href="/register" id=landingnav>Sign Up<i aria-hidden="true" class="fas fa-user-plus" id=landingnav></i></a></li>
+                    <li><a href="/login" id=landingnav>Login<i aria-hidden="true" class="fas fa-user" style="padding-right: 40px;" id=landingnav></i></a></li>
+                <% }else{ %>
+                    <li><a href="#" id=landingnav>Login As <%=currentUser.username %></a></li>
+                    <li><a href="/logout"  id=landingnav>Logout <i  aria-hidden="true" class="fas fa-sign-out-alt" id=landingnav></i></a></li>
+                <% } %>
+
+                <!--<li><a href="/register" style="font-size: large;">Sing Up<i aria-hidden="true" class="fas fa-user-plus" style="font-size: large;"></i></a></li>
+                <li><a href="/login" style="font-size: large; ">Login<i aria-hidden="true" class="fas fa-user" style="font-size: large; padding-right: 40px;"></i></a></li> -->
+
+            </ul>
+        </div><!--closing of collapse-->
+    </nav>
+    <div style="margin-top: 80px;"></div>
+            <div class="container">
+                <%if(error && error.length >0){%>
+                    <div class="alert alert-danger" role="alert">
+                        <%= error %>
+                    </div>
+                <%} %>
+                <%if(success && success.length >0){%>
+                    <div class="alert alert-success" role="alert">
+                        <%= success %>
+                    </div>
+                    <% console.log(currentUser.username)%>
+                <%} %>
+        <section id="8">
+            </div>
+                <div class="container jumbotron" data-aos="fade-down" style="padding-top: 20px; padding-bottom: 20px; background: #1f1f1f;">
+                    <p style="text-align: center; font-size: 60px; font-family: 'Lexend Tera', sans-serif; color: white;">Class 8</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <a href="https://byjus.com/ncert-solutions-class-8-science/"><div class="col-md-6">
+                            <div class="cardm " data-aos="fade-right" >
+                                <img src="https://thumbs.gfycat.com/InsidiousHauntingAuklet-size_restricted.gif" alt="" style="height: 300px; width: 100%;">
+                            </div>
+                            <div>
+                                <p style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem; ">SCIENCE</p>
+                            </div>
+                        </div></a>
+
+                        <a href="https://byjus.com/ncert-solutions-class-8-maths/"><div class="col-md-6">
+                            <div class="cardm " data-aos="fade-left" >
+                                <img src="https://media1.tenor.com/images/6310c9d32a386479d17b6f8d5c54eec4/tenor.gif?itemid=14025651" alt="" style="height: 300px; width: 100%;">
+                            </div>
+                            <div>
+                                <p style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem; ">MATHS</p>
+                            </div>
+                        </div></a>
+
+                        <a href="https://byjus.com/ncert-solutions-class-8-social-science/"><div class="col-md-6">
+                            <div class="cardm " data-aos="fade-right" >
+                                <img src="https://1.bp.blogspot.com/-rrZTh6qF4MI/XRRPIaEh7UI/AAAAAAAABP4/akVrOV8Eo1Ecu4PXKpAIhO_Zj4pu6ZfnwCK4BGAYYCw/s400/Earth-moon-rotation-speed-space-comparison.gif" alt="" style="height: 300px; width: 100%;">
+                            </div>
+                            <div>
+                                <p style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem; ">SOCIAL SCIENCE</p>
+                            </div>
+                        </div></a>
+
+                        <a href="https://byjus.com/ncert-solutions-class-8-english/"><div class="col-md-6">
+                            <div class="cardm " data-aos="fade-left" >
+                                <img src="https://i.gifer.com/KyfI.gif" alt="" style="height: 300px; width: 100%;">
+                            </div>
+                            <div>
+                                <p style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem; ">ENGLISH</p>
+                            </div>
+                        </div></a>
+
+                        <a href="https://byjus.com/cbse-class-8-hindi-syllabus/"><div class="col-md-6">
+                            <div class="cardm " data-aos="fade-right" >
+                                <img src="https://thumbs.gfycat.com/GroundedFoolishBittern-size_restricted.gif" alt="" style="height: 300px; width: 100%;">
+                            </div>
+                            <div>
+                                <p style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem; ">HINDI</p>
+                            </div>
+                        </div></a>
+                        
+                        
+
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section id="9">
+            </div>
+                <div class="container jumbotron" data-aos="fade-down" style="padding-top: 20px; padding-bottom: 20px; background: #1f1f1f;">
+                    <p style="text-align: center; font-size: 60px; font-family: 'Lexend Tera', sans-serif; color: white;">Class 9</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <a href="https://byjus.com/ncert-solutions-class-9-science/"><div class="col-md-6">
+                            <div class="cardm " data-aos="fade-right" >
+                                <img src="https://i.pinimg.com/originals/82/e5/e2/82e5e2b00c8f2ef537245af4dc6ee9cd.gif" alt="" style="height: 300px; width: 100%;">
+                            </div>
+                            <div>
+                                <p style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem; ">SCIENCE</p>
+                            </div>
+                        </div></a>
+
+                        <a href="https://byjus.com/ncert-solutions-class-9-maths/"><div class="col-md-6">
+                            <div class="cardm " data-aos="fade-left" >
+                                <img src="https://i.gifer.com/7gPy.gif" alt="" style="height: 300px; width: 100%;">
+                            </div>
+                            <div>
+                                <p style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem; ">MATHS</p>
+                            </div>
+                        </div></a>
+
+                        <a href="https://byjus.com/ncert-solutions-class-9-social-science/"><div class="col-md-6">
+                            <div class="cardm " data-aos="fade-right" >
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Balmain-Woolwich_ferry_services_history%2C_1992-2017.gif" alt="" style="height: 300px; width: 100%;">
+                            </div>
+                            <div>
+                                <p style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem; ">SOCIAL SCIENCE</p>
+                            </div>
+                        </div></a>
+
+                        <a href="https://byjus.com/ncert-solutions-class-9-english/"><div class="col-md-6">
+                            <div class="cardm " data-aos="fade-left" >
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT-xI7wnzOnJtr_K3E83nrMFXHcGYNV7QpGbofTKEQgyictBoVR&usqp=CAU" alt="" style="height: 300px; width: 100%;">
+                            </div>
+                            <div>
+                                <p style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem; ">ENGLISH</p>
+                            </div>
+                        </div></a>
+
+                        <a href="https://byjus.com/cbse-class-9-hindi-syllabus/"><div class="col-md-6">
+                            <div class="cardm " data-aos="fade-right" >
+                                <img src="https://thumbs.gfycat.com/ZigzagInfamousBarb-size_restricted.gif" alt="" style="height: 300px; width: 100%;">
+                            </div>
+                            <div>
+                                <p style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem; ">HINDI</p>
+                            </div>
+                        </div></a>
+                        
+                        
+
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section id="10">
+            </div>
+                <div class="container jumbotron" data-aos="fade-down" style="padding-top: 20px; padding-bottom: 20px; background: #1f1f1f;">
+                    <p style="text-align: center; font-size: 60px; font-family: 'Lexend Tera', sans-serif; color: white;">Class 10</p>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <a href="https://byjus.com/ncert-solutions-class-10-science/"><div class="col-md-6">
+                            <div class="cardm " data-aos="fade-right" >
+                                <img src="https://i.imgur.com/exhDO6o.gif" alt="" style="height: 300px; width: 100%;">
+                            </div>
+                            <div>
+                                <p style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem; ">SCIENCE</p>
+                            </div>
+                        </div></a>
+
+                        <a href="https://byjus.com/ncert-solutions-class-10-maths/"><div class="col-md-6">
+                            <div class="cardm " data-aos="fade-left" >
+                                <img src="https://media2.giphy.com/media/3o7btPCcdNniyf0ArS/giphy.gif" alt="" style="height: 300px; width: 100%;">
+                            </div>
+                            <div>
+                                <p style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem; ">MATHS</p>
+                            </div>
+                        </div></a>
+
+                        <a href="https://byjus.com/ncert-solutions-class-10-social-science/"><div class="col-md-6">
+                            <div class="cardm " data-aos="fade-right" >
+                                <img src="https://media.giphy.com/media/oWZPzt7zNmGl2/giphy.gif" alt="" style="height: 300px; width: 100%;">
+                            </div>
+                            <div>
+                                <p style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem; ">SOCIAL SCIENCE</p>
+                            </div>
+                        </div></a>
+
+                        <a href="https://byjus.com/ncert-solutions-class-10-english/"><div class="col-md-6">
+                            <div class="cardm " data-aos="fade-left" >
+                                <img src="https://i.imgur.com/u0XvDQf.gif?noredirect" alt="" style="height: 300px; width: 100%;">
+                            </div>
+                            <div>
+                                <p style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem; ">ENGLISH</p>
+                            </div>
+                        </div></a>
+
+                        <a href="https://byjus.com/cbse-class-10-hindi-syllabus/"><div class="col-md-6">
+                            <div class="cardm " data-aos="fade-right" >
+                                <img src="https://files.askiitians.com/cdn1/images/2014106-1405299-1283-tumblr_mve89xajw21s9j08jo1_500.gif" alt="" style="height: 300px; width: 100%;">
+                            </div>
+                            <div>
+                                <p style="text-align: center; font-family: 'Josefin Sans', sans-serif; font-size: 3rem; ">HINDI</p>
+                            </div>
+                        </div></a>
+                        
+                        
+
+                    </div>
+                    
+                </div>
+            </section>
+            
+
+        <%- include('partials/footer') -%>
